@@ -14,7 +14,7 @@ This is a python project which scores any GitHub repository. All you need to do 
 ## To Run :
 <p>Install Streamlit and other pyhton Dependencies used in the code.</p>
 <p>
-To Run : streamlit run your_script.py
+To Run : streamlit run main.py
 </p>
 
 ## Screenshots : 
