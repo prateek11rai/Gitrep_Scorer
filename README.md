@@ -1,7 +1,7 @@
 # Gitrep_Scorer
 
 ## Project Description : 
-This is a python project which scores any GitHub repository. All you need to do is to give the repository URL of the repo you need to score and based on TOPSIS analysis on the dataset we have picked the repository gets a score. The dataset we picked was from <a href="https://www.kaggle.com/">kaggle</a> and is present in this repository named as <a href="https://github.com/prateek11rai/Gitrep_Scorer/blob/main/repositories.csv">repository.csv</a>. The repository has data for various repositories and everytime a URL is entered, the details of repository is extracted and entered into the dataframe and using TOPSIS a score is determined for the repository. Check the code for better understanding of score criteria.
+This is a python project which scores any GitHub repository. All you need to do is to give the repository URL of the repo you need to score and based on TOPSIS analysis on the dataset we have picked the repository gets a score. The dataset we picked was from <a href="https://www.kaggle.com/">kaggle</a> and is present in this repository named as <a href="https://github.com/prateek11rai/Gitrep_Scorer/blob/main/repositories.csv">repository.csv</a>. The repository has data for various repositories and everytime a URL is entered, the details of repository is extracted and entered into the dataframe and using TOPSIS a score is determined for the repository. Check the code for better understanding of score criteria.(verificationtest)
 
 ## Technology used : 
 
