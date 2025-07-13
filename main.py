@@ -1,17 +1,16 @@
-import sys
-
-import requests
-from bs4 import BeautifulSoup
 import json
-import pandas as pd
-import numpy as np
-from dateutil import parser
-from datetime import date
-from dateutil import parser
-from topsis import Topsis
-import streamlit as st
-
 import warnings
+from datetime import date
+
+import numpy as np
+import pandas as pd
+import requests
+import streamlit as st
+from bs4 import BeautifulSoup
+from dateutil import parser
+
+from modules.topsis.topsis import Topsis
+
 warnings.filterwarnings('ignore')
 
 
@@ -30,7 +29,7 @@ if submit:
     # running the script from here
     URL = a[0:8] + "api." + a[8:19] + "repos/" + a[19:]
 
-    token="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"
+    token="<YOUR_GITHUB_TOKEN>"
     headers={'Authorization':'token' + token}
     r = requests.get(URL,headers=headers)
     
@@ -173,7 +172,7 @@ if submit:
     row_to_add=[owner_type,is_archived,is_forked,open_issues,forks,stars,watchers,has_wiki,has_pages,recent_update,days_created]
 
     #importing DataFrame
-    df=pd.read_csv(r'repositories.csv',sep='\t')
+    df=pd.read_csv(r'resources/datasets/repositories.csv',sep='\t')
 
     df=df.drop(['topic','name','owner','full_name','description','og_image','license','size','language','tags','has_sponsorship'],axis=1)
     df.owner_type[df.owner_type == 'Organization'] = 0
